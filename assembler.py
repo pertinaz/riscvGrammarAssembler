@@ -65,8 +65,6 @@ registerMap = {
     'x31': '11111'
 }
 
-#traducir las instrucciones ensambladas a su representación binaria.
-
 def toBinary(val,bits):
   # convierte un entero a su representación binario con un número fijo de bits.
   return format(val & ((1<<bits)-1),'0{}b'.format(bits))
